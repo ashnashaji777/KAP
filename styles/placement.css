@@ -1,0 +1,100 @@
+.centered-section {
+    background-color: #ffffff; /* White background */
+    padding: 50px 20px;
+    text-align: center; /* Center-align text */
+  }
+  
+  .container1 {
+    max-width: 1000px; /* Limit content width */
+    margin: 0 auto; /* Center container */
+  }
+  
+  .section-heading {
+    font-size: 30px;
+    font-weight: bold;
+    color: hsl(251, 78%, 29%);
+    margin-bottom: 20px;
+  }
+  
+  .section-content {
+    font-size: 18px;
+    line-height: 1.6;
+    color: #1a1919;
+  }
+  
+
+  .violet-section {
+    background-color: #FFC107; /* Light violet background */
+    padding: 60px 20px;
+  }
+  
+  .container2 {
+    display: grid;
+    grid-template-rows: auto auto auto;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 40px;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  /* Info Boxes */
+  .info-box {
+    background-color: #ffffff; /* White background */
+    border-radius: 15px; /* Curved corners */
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .info-box:hover {
+    transform: translateY(-5px); /* Bulging effect */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  }
+  
+  .info-box h3 {
+    color: hsl(251, 78%, 29%);
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+  
+  .info-box p {
+    font-size: 14px;
+    color: #333333;
+    line-height: 1.6;
+    margin-bottom: 10px;
+  }
+  
+  .info-box ul {
+    list-style-type: disc;
+    padding-left: 20px;
+    color: #555555;
+  }
+  
+  /* First Row Boxes */
+  .first-box,
+  .second-box {
+    grid-row: 1 / 2;
+    grid-column: span 1;
+  }
+  
+  /* Center Image in Second Row */
+  .center-image {
+    grid-row: 2 / 3;
+    grid-column: span 2;
+    justify-self: center;
+    align-self: center;
+  }
+  
+  .center-image img {
+    width: 400px; /* Increased image size */
+    height: auto;
+    border-radius: 50%; /* Optional circular style */
+  }
+  
+  /* Third Row Boxes */
+  .third-box,
+  .fourth-box {
+    grid-row: 3 / 4;
+    grid-column: span 1;
+  }
+  

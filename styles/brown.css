@@ -1,0 +1,47 @@
+/* Styling the career openings section */
+.career-openings {
+    background-color: #ffc107; /* Brown background */
+    color: #fff;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+/* Career heading styling with 3D effect */
+.career-heading {
+    font-size: 3rem; /* Larger font size for 3D effect */
+    font-weight: bold;
+    margin-bottom: 20px;
+    position: relative;
+    text-transform: uppercase;
+    color: white;
+    text-shadow: 
+        1px 1px 0px  hsl(251, 84%, 12%), /* Light shadow for 3D */
+        2px 2px 0px  hsl(0, 80%, 55%), 
+        3px 3px 0px  hsl(250, 85%, 11%), 
+        4px 4px 0px  hsl(0, 88%, 38%), 
+        5px 5px 5px  hsl(251, 83%, 16%); /* Deeper shadow for depth */
+}
+
+/* Links container */
+.career-links {
+    display: flex;
+    justify-content: center;
+    gap: 1px; /* Space between the links */
+    color: #ffc107;
+}
+
+/* Styling for the links */
+.career-link {
+    color: red;
+    font-size: 1.1rem;
+    text-decoration: none;
+    padding: 10px 20px;
+    
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+/* Hover effect for the links */
+.career-link:hover {
+    background-color:#ffc107; /* Darker brown on hover */
+}

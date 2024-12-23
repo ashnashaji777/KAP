@@ -1,0 +1,48 @@
+.content-section {
+    background-color: white;
+    padding: 40px 20px;
+}
+
+.content-item {
+    display: block; /* Keeps the layout simple */
+}
+
+.content-text {
+    font-size: 1.1em;
+    line-height: 1.6;
+    text-align: justify;
+    color: #333;
+    overflow: hidden; /* Clear floats */
+}
+
+.content-text h2 {
+    margin-bottom: 20px;
+    font-size: 1.8em;
+    color: #222;
+    text-align: center;
+}
+
+.content-text p {
+    margin: 0;
+    position: relative;
+    color: black;
+}
+
+.content-text img {
+    float: left; /* Align image to the left */
+    margin-right: 20px; /* Space between image and text */
+    margin-bottom: 10px;
+    max-width: 300px; /* Limit image size */
+    height: auto;
+    border-radius: 8px; /* Optional: Rounded corners */
+}
+
+
+@media (max-width: 768px) {
+    .content-text img {
+        float: none; /* Remove float */
+        display: block; /* Make image block-level */
+        margin: 0 auto 20px; /* Center image with spacing below */
+        max-width: 100%; /* Allow full width on smaller screens */
+    }
+}

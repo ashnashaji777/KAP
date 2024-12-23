@@ -1,0 +1,458 @@
+/* General Styles */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    color: #fff;
+    background-color: #f9f9f9;
+}
+
+/* Header Styles */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: hsl(251, 86%, 15%); /* Light Brown */
+    padding: 10px 20px;
+    color: #fff;
+}
+
+header .logo {
+    display: flex;
+    align-items: center;
+}
+
+header .logo img {
+    height: 100px;
+    margin-right: 10px;
+}
+
+header .social-icons a {
+    margin: 0 5px;
+    color: #fff;
+    text-decoration: none;
+}
+
+header .social-icons a:hover {
+    text-decoration: underline;
+}
+
+header .helpline {
+    margin: 0;
+    font-size: 14px;
+}
+
+header .apply-now {
+    background-color: #fff;
+    color:red;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+header .apply-now:hover {
+    background-color: #FFC107 ;
+    color: black ;
+}
+
+/* Navigation Bar */
+/* Navbar styling */
+.navbar {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    background-color: white  ; /* Brown background */
+    justify-content: space-around;
+    align-items: center;
+    border: 1px solid hsl(251, 86%, 15%); /* Thin off-white border */
+}
+
+.navbar li {
+    position: relative;
+}
+
+.navbar > li > a {
+    display: block;
+    padding: 10px 20px;
+    color: red;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.navbar > li > a:hover {
+    background-color:  #FFC107; /* Darker brown on hover */
+    color: black;
+}
+
+/* Dropdown styling */
+.dropdown {
+    list-style-type: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    display: none; /* Hidden by default */
+    background-color: #f8f4f0; /* Off-white */
+    border: 1px solid red; /* Brown border */
+    padding: 10px 0;
+    z-index: 1000;
+    width: 200px; 
+}
+
+.dropdown li {
+    text-align: left;
+}
+
+.dropdown li a {
+    display: block;
+    padding: 10px 20px;
+    color: black; /* Dark text */
+    text-decoration: none;
+    font-size: 14px;
+    transition: background-color 0.3s ease;
+}
+
+.dropdown li a:hover {
+    background-color: #FFC107; /* Brown background on hover */
+    color: black; /* White text on hover */
+}
+
+/* Show dropdown on hover */
+.navbar li:hover .dropdown {
+    display: block;
+}
+
+
+
+/* Footer Styles */
+footer {
+    background-color:hsl(251, 86%, 15%);
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+.footer-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: flex-start;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.footer-section {
+    margin: 10px;
+    flex: 1;
+    min-width: 200px;
+}
+
+.footer-section h3 {
+    border-bottom: 2px solid #fff;
+    padding-bottom: 5px;
+    margin-bottom: 10px;
+}
+
+.footer-section ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-section ul li {
+    margin: 5px 0;
+    
+}
+
+.footer-section ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.footer-section ul li a:hover {
+    text-decoration: underline;
+    color: #FFC107;
+}
+
+.footer-section .social-icons a {
+    margin: 0 5px;
+    color: #fff;
+    text-decoration: none;
+}
+
+.footer-section .social-icons a:hover {
+    text-decoration: underline;
+    color: #FFC107;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    header .social-icons {
+        margin-top: 10px;
+    }
+
+    nav ul {
+        flex-direction: column;
+    }
+
+    nav ul li a {
+        text-align: center;
+    }
+
+    .footer-content {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+/* Container for social icons */
+.social-icons {
+    display: flex;
+    justify-content: flex-start; /* Aligns icons to the left */
+    align-items: center;
+    gap: 10px; /* Adjust space between icons */
+}
+
+/* Style for the social media icons */
+.social-icons a {
+    display: inline-block;
+}
+
+.social-icons img {
+    width: 20px; /* Set the size of the icons */
+    height: auto; /* Maintain aspect ratio */
+    transition: transform 0.3s ease; /* Smooth transition on hover */
+}
+
+/* Hover effect for icons */
+.social-icons img:hover {
+    transform: scale(1.2); /* Slightly enlarge the icons on hover */
+}
+/* Logo section in the footer */
+.footer-section .logo-section img {
+    max-width: 20px; /* Limits the logo width */
+    width: 20%; /* Ensures the logo scales proportionally within its container */
+    height: auto; /* Maintain aspect ratio */
+}
+
+/* Style for the helpline number */
+.helpline {
+    font-size: 18px; /* Size of the text */
+    font-weight: bold; /* Bold text */
+    color: red; /* Text color */
+    background-color: white; /* Background color */
+    padding: 10px 20px; /* Padding for spacing */
+    border-radius: 5px; /* Rounded corners */
+    text-align: center; /* Center the text */
+    width: auto; /* Adjust width based on content */
+    position: fixed; /* Fix position on the screen */
+    top: 10px; /* Distance from the top */
+    right: 10px; /* Distance from the right */
+    z-index: 1000; /* Ensure it appears above other elements */
+    opacity: 0; /* Initially hidden */
+    animation: fadeInOut 5s infinite; /* Apply the animation */
+}
+
+/* Keyframes for the appear and disappear effect */
+@keyframes fadeInOut {
+    0% {
+        opacity: 0;
+    }
+    20% {
+        opacity: 1;
+    }
+    80% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+/* Additional Links Section Styles */
+.additional-links-container {
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    height: 100vh; /* Full viewport height to center vertically */
+    background-color: hsl(251, 86%, 15%); /* Optional: Add a background for visibility */
+}
+
+.additional-links {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    font-size: 14px;
+    text-align: center;
+}
+
+.additional-links a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    position: relative; /* For pseudo-elements */
+    display: inline-block; /* Ensures proper alignment */
+    padding: 10px 20px; /* Space around the text */
+    border-radius: 5px; /* Optional: Rounded edges */
+    overflow: hidden; /* Hide overflow from pseudo-elements */
+    transition: transform 0.3s ease; /* Smooth hover scale */
+}
+
+.additional-links a::before,
+.additional-links a::after {
+    content: "";
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    background: rgba(255, 255, 255, 0.8);
+    border-radius: 50%; /* Make it circular */
+    animation: bubble 3s infinite ease-in-out;
+    z-index: -1; /* Ensure it appears behind the text */
+    opacity: 0.5;
+}
+
+.additional-links a::before {
+    top: 50%;
+    left: 20%;
+    animation-delay: 0.5s;
+}
+
+.additional-links a::after {
+    bottom: 50%;
+    right: 20%;
+    animation-delay: 1s;
+}
+
+.additional-links a:hover {
+    transform: scale(1.1); /* Slightly enlarge the link on hover */
+}
+
+.additional-links a:hover::before,
+.additional-links a:hover::after {
+    background: rgba(255, 255, 255, 1); /* Brighten bubbles on hover */
+}
+
+@keyframes bubble {
+    0% {
+        transform: scale(0.5) translateY(0);
+        opacity: 0.8;
+    }
+    50% {
+        transform: scale(1) translateY(-20px);
+        opacity: 1;
+    }
+    100% {
+        transform: scale(0.5) translateY(-40px);
+        opacity: 0;
+    }
+}
+
+
+
+/* Adjust header layout to accommodate the new section */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color:hsl(251, 86%, 15%); /* Light Brown */
+    padding: 10px 50px;
+    color: #fff;
+    flex-wrap: wrap; /* Allow wrapping if the space is small */
+}
+
+header .logo {
+    display: flex;
+    align-items: center;
+    flex: 1;
+}
+
+header .social-icons {
+    display: flex;
+    align-items: center;
+    flex: 1;
+}
+
+header .helpline, header .apply-now {
+    flex: 1;
+}
+
+header .additional-links {
+    flex: 2;
+    display: flex;
+    justify-content: flex-end;
+}
+
+
+.whatsapp-icon {
+    position: fixed; /* Fixes the position relative to the viewport */
+    bottom: 20px; /* Distance from the bottom of the viewport */
+    left: 20px; /* Distance from the right of the viewport */
+    z-index: 1000; /* Keeps it above other elements */
+    width: 60px; /* Icon width */
+    height: 60px; /* Icon height */
+    cursor: pointer; /* Changes the cursor to a pointer on hover */
+}
+
+.whatsapp-icon img {
+    width: 100%; /* Ensures the image fills the icon container */
+    height: 100%; /* Maintains aspect ratio */
+    border-radius: 50%; /* Makes the icon circular */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Optional: Adds a shadow */
+}
+
+.whatsapp-icon:hover img {
+    transform: scale(1.1); /* Optional: Adds a hover effect */
+    transition: transform 0.2s ease; /* Smooth animation */
+}
+
+
+.home-icon {
+    position: fixed; /* Fixes the position relative to the viewport */
+    bottom: 20px; /* Distance from the bottom of the viewport */
+    right: 20px; /* Distance from the right of the viewport */
+    z-index: 1000; /* Keeps it above other elements */
+    width: 60px; /* Icon width */
+    height: 60px; /* Icon height */
+    cursor: pointer; /* Changes the cursor to a pointer on hover */
+}
+
+.home-icon img {
+    width: 100%; /* Ensures the image fills the icon container */
+    height: 100%; /* Maintains aspect ratio */
+    border-radius: 50%; /* Makes the icon circular */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Optional: Adds a shadow */
+}
+
+.home-icon:hover img {
+    transform: scale(1.1); /* Optional: Adds a hover effect */
+    transition: transform 0.2s ease; /* Smooth animation */
+}
+
+
+.sub-dropdown {
+    position: absolute;
+    top: 0;
+    left: 100%; /* Align to the right of the parent dropdown */
+    display: none;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    background: #f1ebeb;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border: red;
+    width: 200px;
+}
+
+.sub-dropdown li a {
+    padding: 10px 15px;
+}
+li:hover > .sub-dropdown {
+    display: block;
+}

@@ -1,0 +1,498 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KAP College</title>
+    <link rel="stylesheet" href="./styles/style.css">
+    <link rel="stylesheet" href="./styles/popup.css">
+    <link rel="stylesheet" href="./styles/image.css">
+    <link rel="stylesheet" href="./styles/pinnacle.css">
+
+
+
+
+
+
+</head>
+<body>
+
+
+<header>
+    <div class="logo">
+        <img src="assets/images/logo.jpeg" alt="KAP College Logo">
+        <span>KERALA ACADEMY OF PHARMACY </span>
+    </div>
+    <div class="social-icons">
+        <a href="https://www.facebook.com/kerala.academy.of.pharmacy.trivandrum/" target="_blank"><img src="assets/icons/fb.png" alt="Facebook"></a>
+            <a href="https://www.instagram.com/keralaacdemyofpharmacy/" target="_blank"><img src="assets/icons/insta.png" alt="Instagram"></a>
+            <a href="https://www.youtube.com/@keralaacademyofpharmacy585" target="_blank"><img src="assets/icons/youtube.png" alt="YouTube"></a>
+            <a href="https://www.linkedin.com/company/kerala-academy-of-pharmacy-trivandrum/" target="_blank"><img src="assets/icons/linkdin.png" alt="LinkedIn"></a>
+    </div>
+
+    <div class="additional-links" style="text-align: center; align-items: center;">
+        <a href="campus.html">Campus</a>
+        <a href="contact.html">Contact</a>
+        <a href="career.html">Career Openings</a>
+        <a href="assets/images/travel information.pdf">Travel Information</a>
+    </div>
+
+    <div>
+        <p class="helpline">Helpline: +91-918951220590</p>
+        <br><br><br>
+        <a href="apply.html" target="_blank">
+            <button class="apply-now">Apply Now</button>
+        </a>
+        
+    </div>
+
+   
+
+  
+    
+</header>
+<nav>
+    <ul class="navbar">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a>
+            <ul class="dropdown">
+                <li><a href="chairman.html">Message from Chairman</a></li>
+                <li><a href="principle.html">Principal's Message</a></li>
+                <li><a href="vision.html">Vision and Mission</a></li>
+            </ul>
+        </li>
+        <li><a href="#">Why KAP</a>
+            <ul class="dropdown">
+                <li><a href="pharmacy.html">Pharmacy</a></li>
+                <li><a href="career.html">Career Openings</a></li>
+            </ul>
+        </li>
+        <li><a href="#">Academics</a>
+            <ul class="dropdown">
+                <li><a href="pinnacle.html">Pinnacles of KAP</a></li>
+                <li><a href="library.html">Library</a></li>
+            </ul>
+        </li>
+        <li><a href="#">Admission</a>
+            <ul class="dropdown">
+                <li><a href="#">Courses</a>
+                    <ul class="sub-dropdown">
+                        <li><a href="bpharm.html">B-PHARM</a></li>
+                        <li><a href="dpharm.html">D-PHARM</a></li>
+                        <li><a href="mpharm.html">BPharm(Lateral Entry)3-years</a></li>
+                    </ul>
+                </li>
+                <li><a href="online.html">Online Admission Registration</a></li>
+                <li><a href="payment.html">Online Payment</a></li>
+            </ul>
+        </li>
+        <li><a href="approval.html">Approval</a></li>
+        <li><a href="events.html">Events</a></li>
+        <li><a href="blogs.html">Blogs</a></li>
+        <li><a href="faq.html">FAQ</a></li>
+        <li><a href="placements.html">Placements</a></li>
+    </ul>
+</nav>
+
+
+
+<main>
+    <!-- Page-specific content will go here -->
+
+    <section class="registration-form-section">
+        <h1>Application For B-pharm $ D-pharm</h1>
+        <h3>Find all the details and pay application fee along with submission *</h3>
+
+        <div class="form-container">
+
+            <div class="fee-box">
+                Application Fee: ₹800
+            </div>
+            <form id="registrationForm">
+                <!-- Row 1 -->
+                <div class="form-row">
+                    <label for="name">Name<span class="required">*</span></label>
+                    <input type="text" id="name" name="name" required>
+
+                    <label for="email">Email<span class="required">*</span></label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+
+                <!-- Row 2 -->
+                <div class="form-row">
+                    <label for="phone">Phone No<span class="required">*</span></label>
+                    <input type="tel" id="phone" name="phone" required>
+
+                    <label for="dob">Date of Birth<span class="required">*</span></label>
+                    <input type="date" id="dob" name="dob" required>
+                </div>
+
+                <!-- Row 3 -->
+                <div class="form-row">
+                    <label for="course">Select Course<span class="required">*</span></label>
+                    <select id="course" name="course" required>
+                        <option value="">-- Select --</option>
+                        <option value="BPharm">B.Pharm</option>
+                        <option value="DPharm">D.Pharm</option>
+                       
+                    </select>
+                </div>
+
+                <!-- Row 4 -->
+                <div class="form-row">
+                    <label for="altPhone">Alternate No:</label>
+                    <input type="tel" id="altPhone" name="altPhone">
+
+                    <label for="address">Address<span class="required">*</span></label>
+                    <textarea id="address" name="address" required></textarea>
+                </div>
+
+                <!-- Row 5 -->
+                <div class="form-row">
+                    <label for="pincode">Pincode</label>
+                    <input type="text" id="pincode" name="pincode">
+
+                    <label for="district">District<span class="required">*</span></label>
+                    <input type="text" id="district" name="district" required>
+
+                    <label for="state">State<span class="required">*</span></label>
+                    <input type="text" id="state" name="state" required>
+                </div>
+
+                <!-- Row 6 -->
+                <div class="form-row">
+                    <label for="tenthPercentage">10th Board Percentage<span class="required">*</span></label>
+                    <input type="number" id="tenthPercentage" name="tenthPercentage" required>
+
+                    <label for="twelfthPercentage">12th Board Percentage<span class="required">*</span></label>
+                    <input type="number" id="twelfthPercentage" name="twelfthPercentage" required>
+                </div>
+
+                <!-- Row 7 -->
+                <div class="form-row">
+                    <label for="subject">Subject<span class="required">*</span></label>
+                    
+                    <select id="subject1" name="subject1" required>
+                        <option value="">-- Select --</option>
+                        <option value="BPharm">PCB</option>
+                        <option value="BPharm">PCM</option>
+                        <option value="BPharm">Others</option>
+                      
+                       
+                    </select>
+                </div>
+
+                <!-- Row 8 -->
+                <div class="form-row">
+                    <label for="sub1">Specify Subject and marks subject 1<span class="required">*</span></label>
+                    <select id="subject1" name="subject1" required>
+                        <option value="">-- Select --</option>
+                        <option value="Physics">Physics</option>
+                       
+                      
+                       
+                    </select>
+
+                    <label for="sub2"> subject 2</label>
+                    <select id="subject1" name="subject1" required>
+                        <option value="">-- Select --</option>
+                        <option value="Chemistry">Chemistry</option>
+                       
+                      
+                       
+                    </select>
+
+                    <label for="sub3"> subject 3</label>
+                    <select id="subject1" name="subject1" required>
+                        <option value="">-- Select --</option>
+                        <option value="Biology">Biology</option>
+                        <option value="Maths">Mathematics</option>
+                        <option value="biotechnology">Biotechnology</option>
+                        <option value="cs">Computter Science</option>
+                        <option value="others">Others</option>
+                        
+                       
+                      
+                       
+                    </select>
+                    
+                </div>
+
+
+                <div class="form-row">
+                    <label for="marks1">Marks/100<span class="required">*</span></label>
+                    <input type="number" id="marks1" name="marks1" required>
+
+                    <label for="marks2">Marks/100<span class="required">*</span></label>
+                    <input type="number" id="marks2" name="marks2" required>
+                    <label for="marks3">Marks/100<span class="required">*</span></label>
+                    <input type="number" id="marks1" name="marks3" required>
+
+                </div>
+
+                <!-- Additional Rows for Parents -->
+                <div class="form-row">
+                    <label for="fatherName">Father's Name<span class="required">*</span></label>
+                    <input type="text" id="fatherName" name="fatherName" required>
+
+                    <label for="fatherName">Occupation<span class="required">*</span></label>
+                    <input type="text" id="fatheroccupation" name="fatherOccupation" required>
+
+                    <label for="fatherName">Annual salary</label>
+                    <input type="text" id="fatherSalary" name="fatherSalary" >
+
+                   
+                </div>
+                <div class="form-row">
+                    <label for="fathersPhone"> Phone No<span class="required">*</span></label>
+                    <input type="tel" id="fathersPhone" name="fathersPhone" required>
+                    <label for="fathersPhone">email<span class="required">*</span></label>
+                    <input type="tel" id="fathersEmail" name="fathersEmail" required>
+
+                </div>
+
+                <div class="form-row">
+                    <label for="motherName">Mother's Name<span class="required">*</span></label>
+                    <input type="text" id="motherName" name="motherName" required>
+
+                    <label for="Occupation">Occupation<span class="required">*</span></label>
+                    <input type="text" id="motherOccupation" name="motherOccupation" required>
+
+                    <label for="motherSalary">Annual salary</label>
+                    <input type="text" id="motherSalary" name="motherSalary" >
+
+                   
+                </div>
+                <div class="form-row">
+                    <label for="fathersPhone"> Phone No<span class="required">*</span></label>
+                    <input type="tel" id="fathersPhone" name="fathersPhone" required>
+                    <label for="fathersPhone">email<span class="required">*</span></label>
+                    <input type="tel" id="fathersEmail" name="fathersEmail" required>
+
+                </div>
+
+                <!-- Row for Files -->
+                <div class="form-row">
+                    <label for="photo">Photo<span class="required">*</span></label>
+                    <input type="file" id="photo" name="photo" required>
+
+                    <label for="signature">Signature<span class="required">*</span></label>
+                    <input type="file" id="signature" name="signature" required>
+                </div>
+                <div class="form-row">
+                    <label for="sslc">10 th Marks Card<span class="required">*</span></label>
+                    <input type="file" id="sslc" name="sslc" required>
+
+
+                    <label for="plustwo">12 th Marks Card<span class="required">*</span></label>
+                    <input type="file" id="plustwo" name="plustwo" required>
+                </div>
+
+                <!-- Declaration and Submit -->
+                
+                    <input type="checkbox" id="declaration" required>
+                    <label for="declaration" style="color: black;">I hereby solemnly affirm that the statement made and information furnished in my application an also in all 
+                        enclosures there to submitted by me and true.I declare that i will if admitted abide by the rules and regulations of the college.
+                    </label><br><br>
+                
+                   <a href="payment.htmml " target="_blank">
+                    <button type="submit" class="submit-button" style="margin: 20px auto;display: block;">Submit</button>
+
+                   </a>
+                </div>
+            </form>
+        </div>
+
+    </section>
+
+   
+    
+    
+    
+    
+
+    
+    
+
+    
+</main>
+
+
+<style>
+    body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f9;
+        }
+
+        .registration-form-section {
+            padding: 20px;
+            background: #fff;
+        }
+
+        h1, h3 {
+            text-align: center;
+            color: #333;
+            font-weight: bold;
+            
+        }
+
+        .form-container {
+            background-color: #f9f9f9;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            max-width: 1200px;
+            margin: 20px auto;
+        }
+
+        .form-row {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 15px;
+            margin-bottom: 15px;
+        }
+
+        .form-row label {
+            flex: 1;
+            font-size: 0.9em;
+            color: #333;
+        }
+
+        .form-row input, .form-row textarea, .form-row select {
+            flex: 2;
+            padding: 8px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        textarea {
+            resize: none;
+        }
+
+        .required {
+            color: red;
+        }
+        .button-container {
+    display: flex; /* Enables flexbox */
+    justify-content: center; /* Centers content horizontally */
+    margin-top: 20px; /* Optional spacing from above */
+}
+
+.submit-button {
+    background-color: #ffc107;
+    color: black;
+    border: none;
+    padding: 10px 40px; /* Wider button for better appearance */
+    cursor: pointer;
+    border-radius: 4px;
+    font-size: 16px;
+    text-align: center;
+    transition: background-color 0.3s ease;
+}
+
+.submit-button:hover {
+    background-color: hsl(251, 86%, 15%); /* Darker purple on hover */
+    color: white;
+}
+
+
+        .fee-box {
+    position: absolute; /* Positioned relative to the form container */
+    top: 250px; /* Distance from the top */
+    right: 20px; /* Distance from the right */
+    background-color: hsl(251, 86%, 15%); /* Background color */
+    color: #fff; /* Text color */
+    padding: 10px 15px; /* Padding inside the box */
+    border: 1px solid hsl(251, 86%, 15%); /* Border color */
+    border-radius: 5px; /* Rounded corners */
+    font-size: 14px; /* Font size */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+    z-index: 10; /* Ensure it stays above other content */
+}
+
+</style>
+
+
+<script>
+   
+    document.getElementById("registrationForm").addEventListener("submit", function (event) {
+        // Prevent default form submission behavior
+        event.preventDefault();
+
+        // Check if the form is valid
+        const form = this;
+        if (form.checkValidity()) {
+            // If the form is valid, proceed to the payment page
+            window.open('payment.html', '_blank');
+        } else {
+            // If the form is invalid, show error messages
+            form.reportValidity();
+        }
+    });
+
+
+
+</script>
+
+
+<footer>
+    <div class="footer-content">
+        <div class="footer-section logo-section">
+            <img src="assets/images/logo.jpeg" alt="KAP College Logo" style="  width: 250px;
+    margin-bottom: 20px;">
+        </div>
+        <div class="footer-section links-section">
+            <h3>Links</h3>
+            <ul>
+                <li><a href="b-pharm.html">B Pharmacy</a></li>
+                <li><a href="dpharm.html">D Pharmacy</a></li>
+                <li><a href="index.html">Fee Structure</a></li>
+            </ul>
+        </div>
+        <div class="footer-section explore-section">
+            <h3>Explore</h3>
+            <ul>
+                <li><a href="about.html">About</a></li>
+                <li><a href="index.html">Faculty & Staff</a></li>
+                <li><a href="events.html">Events</a></li>
+                <li><a href="terms.html">Terms & Conditions</a></li>
+            </ul>
+        </div>
+        <div class="footer-section contact-section">
+            <h3>Get in Touch</h3>
+            <p>Address: Kerala Academy of Pharmacy, XYZ Street, City</p>
+            <p>Email: info@kapcollege.com</p>
+            <p>Phone: +91-9876543210</p>
+            <div class="social-icons">
+                <a href="https://www.facebook.com/kerala.academy.of.pharmacy.trivandrum/" target="_blank"><img src="assets/icons/fb.png" alt="Facebook"></a>
+                <a href="https://www.instagram.com/keralaacdemyofpharmacy/" target="_blank"><img src="assets/icons/insta.png" alt="Instagram"></a>
+                <a href="https://www.youtube.com/@keralaacademyofpharmacy585" target="_blank"><img src="assets/icons/youtube.png" alt="YouTube"></a>
+                <a href="https://www.linkedin.com/company/kerala-academy-of-pharmacy-trivandrum/" target="_blank"><img src="assets/icons/linkdin.png" alt="LinkedIn"></a>
+        
+            </div>
+        </div>
+    </div>
+</footer>
+<a href="https://api.whatsapp.com/send/?phone=918951220590&text&type=phone_number&app_absent=0" 
+class="whatsapp-icon" 
+target="_blank" 
+aria-label="Chat with us on WhatsApp">
+ <img src="assets/icons/watsapp.png" alt="WhatsApp Icon">
+
+
+</a>
+
+<a href="index.html" 
+class="home-icon" 
+target="_blank" 
+aria-label="Chat with us on WhatsApp">
+ <img src="assets/icons/home.png" alt="WhatsApp Icon">
+
+
+</a>
+
+
+</body>
+</html>

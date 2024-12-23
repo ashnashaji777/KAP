@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+    <header>
+        <nav>
+          <ul>
+            <li><a href="#travel-info" onclick="showPDF()">Travel Information</a></li>
+            <!-- Add other navigation links here -->
+          </ul>
+        </nav>
+      </header>
+      
+      <!-- Hidden Section to Display the PDF -->
+      <div id="pdf-modal" class="pdf-modal">
+        <div class="modal-content">
+          <button class="close-btn" onclick="closePDF()">Close</button>
+          <embed src="assets/images/travel information.pdf" width="100%" height="600px" />
+          <a href="assets/images/travel information.pdf" download>
+            <button>Download PDF</button>
+          </a>
+        </div>
+      </div>
+
+
+
+      <style>
+        /* Style for PDF Modal */
+.pdf-modal {
+  display: none; /* Hidden by default */
+  position: fixed;
+  z-index: 1000;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+}
+
+.modal-content {
+  background-color: #fff;
+  margin: 50px auto;
+  padding: 20px;
+  border-radius: 8px;
+  width: 80%;
+  max-width: 1000px;
+  position: relative;
+}
+
+.close-btn {
+  background-color: #f44336;
+  color: white;
+  border: none;
+  padding: 10px;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  cursor: pointer;
+}
+
+button {
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+      </style>
+      <script>
+        // Show PDF Modal
+        function showPDF() {
+          const modal = document.getElementById("pdf-modal");
+          modal.style.display = "block";
+        }
+      
+        // Close the PDF Modal
+        function closePDF() {
+          const modal = document.getElementById("pdf-modal");
+          modal.style.display = "none";
+        }
+      
+        // Close modal when clicking outside the modal content
+        window.onclick = function(event) {
+          const modal = document.getElementById("pdf-modal");
+          if (event.target === modal) {
+            modal.style.display = "none";
+          }
+        }
+      </script>
+      
+</html>

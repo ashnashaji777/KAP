@@ -1,0 +1,247 @@
+/* Styling for the image and yellow box container */
+.image-below-header {
+    position: relative;
+    width: 100%;
+    margin-top: 0; /* Removed margin-top to avoid space between header and image */
+    display: flex;
+    justify-content: center;
+    padding: 0; /* Removed padding to avoid extra space */
+}
+
+/* Image styling */
+.image-below-header img {
+    width: 100%;
+    max-width: 1600px;
+    height: 400px;
+    display: block;
+}
+
+/* Container for the yellow box below the image */
+
+
+/* Styling for the yellow box text */
+.yellow-box span {
+    color: #070101; /* Text color */
+    font-weight: bold;
+    font-size: 20px;
+}
+
+/* Program Overview Section */
+.program-overview {
+    background-color: #fff;
+    padding: 40px 20px;
+  }
+  
+  /* Content Container */
+  .content-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 30px;
+  }
+  
+  /* Left Box */
+  .left-box {
+    width: 40%;
+    background-color: #4e45b5;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+  }
+  
+  .left-box h2 {
+    font-size: 24px;
+    font-weight: bold;
+    color: yellow;
+    margin: 0 0 20px 0; /* Adjusted margin for spacing */
+  }
+  
+  .left-box ul {
+    list-style-type: none;
+    padding-left: 0;
+    text-align: left;
+  }
+  
+  .left-box ul li {
+    margin-bottom: 15px;
+  }
+  
+  .left-box ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+  }
+  
+  .left-box ul li a:hover {
+    color: hsl(251, 78%, 29%); /* Highlight color */
+  }
+  
+  /* Right Content */
+  .right-content {
+    width: 45%;
+    padding-left: 30px;
+  }
+  
+  .right-content p {
+    font-size: 16px;
+    color: #555;
+    line-height: 1.6;
+  }
+  
+  /* Additional Info Section */
+  .additional-info {
+    margin-top: 30px;
+  }
+  
+  .additional-info h3 {
+    font-size: 22px;
+    color: #333;
+    margin-bottom: 10px;
+  }
+  
+  .additional-info p, .additional-info ul {
+    font-size: 16px;
+    color: #555;
+  }
+  
+  .additional-info ul {
+    list-style-type: none;
+    padding-left: 0;
+  }
+  
+  .additional-info ul li {
+    margin-bottom: 5px;
+  }
+  
+  /* Add the yellow book icon color and size */
+.yellow-icon {
+    color: #F39C12; /* Yellow color */
+    margin-right: 10px; /* Spacing between icon and text */
+    font-size: 18px; /* Adjust icon size */
+    
+  }
+
+  /* Styling for the Apply Now button */
+
+  
+ 
+  
+  
+  /* Styling for program content */
+.program-content {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px; /* Adds space between sections */
+  }
+  
+  /* Styling for each section */
+  .section {
+    padding: 15px;
+    /*border-left: 4px solid #1E90FF; /* Adds a blue left border to each section */
+    background-color: #fff; /* Light gray background */
+    margin-bottom: 20px; /* Adds spacing between sections */
+  }
+  
+  /* Styling for the headings */
+  .heading {
+    color: hsl(251, 78%, 29%); /* Blue color for headings */
+    font-size: 24px;
+    margin-bottom: 10px;
+    text-align: left;
+  }
+  
+  /* Styling for the content paragraphs */
+  .content {
+    color: #000000; /* Black color for text */
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+    text-align: left;
+  }
+  
+  /* Add responsive design */
+  @media (max-width: 768px) {
+    .program-content {
+      padding: 10px;
+    }
+  
+    .heading {
+      font-size: 20px;
+    }
+  
+    .content {
+      font-size: 14px;
+    }
+  }
+  
+ /* Styling for the unordered list */
+.admission-list {
+    list-style-type: none; /* Remove default bullets */
+    padding-left: 0; /* Remove padding from left */
+  }
+  
+  .admission-list li {
+    display: flex; /* Use flexbox for positioning the tick and text */
+    align-items: center; /* Align the items vertically */
+    font-size: 16px;
+    margin-bottom: 10px; /* Space between list items */
+    color: #000; /* Black color for the list text */
+  }
+  
+  /* Adding the tick mark icon in front of each list item */
+  .admission-list li::before {
+    content: '\2713'; /* Unicode for the checkmark symbol */
+    color: #f0b41d; /* YELLOW color for the tick mark */
+    font-size: 20px; /* Size of the tick mark */
+    margin-right: 10px; /* Space between the tick mark and text */
+  }
+
+  /* Styling for the Major Subjects list */
+
+  
+  /* Adding the yellow tick mark icon in front of each list item */
+  
+  
+/* Styling for the Specializations table */
+
+  /* Styling for the Fee Structure table */
+.fee-structure-table {
+    width: 100%; /* Full-width table */
+    border-collapse: collapse; /* Removes gaps between borders */
+    margin-top: 20px; /* Add spacing above the table */
+    font-size: 16px; /* Set font size */
+    text-align: left; /* Align content to the left */
+  }
+  
+  /* Styling for table header row */
+  .fee-structure-table .header-row {
+    background-color:hsl(251, 78%, 29%); /* Yellow background */
+    color:yellow; /* Black text color */
+    font-weight: bold;
+  }
+  
+  /* Styling for the other rows */
+  .fee-structure-table tr:nth-child(even) {
+    background-color: #6b54e1; /* Light blue background for even rows */
+  }
+  
+  .fee-structure-table tr:nth-child(odd):not(.header-row) {
+    background-color: hsl(251, 78%, 29%); /* Slightly darker blue for odd rows */
+  }
+  
+  /* Styling for table cells */
+  .fee-structure-table th, 
+  .fee-structure-table td {
+    padding: 10px 15px; /* Add space inside the cells */
+    border: 1px solid #ddd; /* Subtle border for cells */
+  }
+  
+  /* Bold total row */
+  .fee-structure-table tr:last-child td {
+    font-weight: bold;
+  }
+  
+  /* Styling for the Top Career Opportunities section */
+  

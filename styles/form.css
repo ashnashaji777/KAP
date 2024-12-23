@@ -1,0 +1,92 @@
+.online-admission {
+    background-color: #ffffff;
+    padding: 40px 20px;
+  }
+  
+  .container {
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: left;
+  }
+  
+  h1 {
+    font-size: 28px;
+    color: #0c0c0c;
+    text-align: center;
+  }
+  
+  h2 {
+    font-size: 18px;
+    color: #666;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .form-group {
+    margin-bottom: 20px;
+  }
+  
+  label {
+    display: block;
+    font-size: 14px;
+    color: #333;
+    margin-bottom: 8px;
+  }
+  
+  input, select {
+    width: 100%;
+    padding: 10px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  input::placeholder {
+    color: #aaa;
+  }
+  
+  .required {
+    color: red;
+    margin-left: 5px;
+  }
+  
+  .form-footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 20px;
+  }
+  
+  .form-footer p {
+    font-size: 14px;
+    color: #333;
+    margin: 0;
+  }
+  
+  .next-button {
+    background-color: #FFC107;
+    color: hsl(251, 78%, 29%);
+    padding: 10px 20px;
+    font-size: 14px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    text-transform: uppercase;
+  }
+  
+  .next-button:hover {
+    background-color: hsl(251, 78%, 29%);
+    color: white;
+  }
+  
+  @media (max-width: 768px) {
+    .form-footer {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  
+    .form-footer p {
+      margin-bottom: 10px;
+    }
+  }
+  

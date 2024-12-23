@@ -1,0 +1,35 @@
+/* Styling the popup message */
+.popup-message {
+    position: fixed;
+    left: 20px;
+    bottom: 20px;
+    background-color: hsl(251, 86%, 15%); /* Brown color */
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 8px;
+    font-size: 1rem;
+    display: none; /* Initially hidden */
+    opacity: 0; /* Initially transparent */
+    transition: opacity 0.5s ease-in-out;
+}
+
+/* Styling for the caption */
+.popup-caption {
+    font-weight: bold;
+}
+
+/* Animation for appearing and disappearing */
+@keyframes fadeInOut {
+    0% {
+        opacity: 0;
+    }
+    25% {
+        opacity: 1;
+    }
+    75% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
